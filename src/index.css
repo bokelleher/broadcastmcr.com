@@ -78,8 +78,8 @@ button {
   align-items: center;
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  background: rgba(10, 18, 38, 0.82);
-  border-bottom: 1px solid rgba(42, 58, 95, 0.7);
+  background: rgba(10, 18, 38, 0.94);
+  border-bottom: 1px solid rgba(42, 58, 95, 0.9);
 }
 
 .nav__inner {
