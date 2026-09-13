@@ -15,11 +15,6 @@ export default function App() {
         <div className="container">
           <div className="hero__grid">
             <div>
-              <img
-                className="hero__mark"
-                src="/broadcastmcr-logo.png"
-                alt="broadcastMCR"
-              />
               <h1 id="hero-title">
                 Operator monitoring for <span>Darwin</span> lanes
               </h1>

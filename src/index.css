@@ -231,11 +231,6 @@ button {
   align-items: center;
 }
 
-.hero__mark {
-  height: 48px;
-  width: auto;
-  margin-bottom: 1.75rem;
-}
 
 .hero h1 {
   font-size: clamp(2.1rem, 5vw, 3.15rem);
