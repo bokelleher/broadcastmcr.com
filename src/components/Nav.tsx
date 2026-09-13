@@ -1,12 +1,12 @@
 import { useState } from 'react'
 
 const LINKS = [
-  { href: '#wall', label: 'The wall' },
+  { href: '#wall', label: 'The Wall' },
   { href: '#telemetry', label: 'Telemetry' },
   { href: '#guardrails', label: 'Guardrails' },
   { href: '#captions', label: 'Captions' },
   { href: '#stream-deck', label: 'Stream Deck' },
-  { href: '#plant', label: 'Run the plant' },
+  { href: '#plant', label: 'Run the Plant' },
 ]
 
 export function Nav() {
