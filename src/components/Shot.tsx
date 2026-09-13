@@ -15,20 +15,22 @@ export function Shot({
   label = 'MCR Panel',
   variant = 'default',
 }: ShotProps) {
-  const cls = ['shot', variant !== 'default' ? `shot--${variant}` : '']
+  const frameCls = ['shot', variant !== 'default' ? `shot--${variant}` : '']
     .filter(Boolean)
     .join(' ')
 
   return (
-    <figure className={cls}>
-      <div className="shot__chrome" aria-hidden="true">
-        <span className="shot__dot" />
-        <span className="shot__dot" />
-        <span className="shot__dot" />
-        <span className="shot__label">{label}</span>
-      </div>
-      <div className="shot__viewport">
-        <img src={src} alt={alt} loading="lazy" decoding="async" />
+    <figure className="shot-block">
+      <div className={frameCls}>
+        <div className="shot__chrome" aria-hidden="true">
+          <span className="shot__dot" />
+          <span className="shot__dot" />
+          <span className="shot__dot" />
+          <span className="shot__label">{label}</span>
+        </div>
+        <div className="shot__viewport">
+          <img src={src} alt={alt} loading="lazy" decoding="async" />
+        </div>
       </div>
       <figcaption className="shot__caption">{caption}</figcaption>
     </figure>
