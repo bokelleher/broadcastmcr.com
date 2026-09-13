@@ -29,6 +29,7 @@ export default function App() {
                 <li>Arm then take</li>
                 <li>608 / 708 captions</li>
                 <li>Stream Deck tokens</li>
+                <li>Ad POD timers</li>
               </ul>
             </div>
             <div className="hero__shot reveal">
@@ -194,6 +195,65 @@ export default function App() {
                     <strong>Lane detail.</strong> Source legs, LUFS, guarded
                     Pre-Game / Post-Game / Off Air / Tech Diff takes, and PID
                     bitrate footer on one channel.
+                  </>
+                }
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      {/* 3b. Ad PODs */}
+      <section
+        id="ad-pods"
+        className="section band"
+        aria-labelledby="ad-pods-title"
+      >
+        <div className="container">
+          <div className="split reveal">
+            <div className="split__copy">
+              <p className="eyebrow">Ad PODs</p>
+              <h2 id="ad-pods-title" className="h2">
+                Pod clock and per-ad timers on the glass.
+              </h2>
+              <p className="lede">
+                When a break is live, operators see pod remaining time and the
+                current ad index with its own countdown — next to the SCTE-35
+                feed that drove the markers.
+              </p>
+              <ul className="points">
+                <li>
+                  <span>
+                    <strong>Pod remaining</strong> — total time left in the
+                    break, readable at a glance from the channel header.
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    <strong>Per-ad timer</strong> — which ad is on (AD N) and how
+                    long that creative still has.
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    <strong>SCTE-35 context</strong> — OUT/IN events with provider
+                    ad labels stay on the same panel as the countdown.
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div className="split__media">
+              <Shot
+                src="/mcr-ad-pods.png"
+                alt="Channel detail during a commercial with orange Ad POD badge showing pod remaining, AD 5, and per-ad countdown beside LIVE"
+                label="Ad POD timers"
+                variant="dense"
+                caption={
+                  <>
+                    <strong>0:38 — AD 5 0:23.</strong> Pod remaining and the
+                    current ad&apos;s timer sit in the header while SCTE-35
+                    logs the Provider Ad Start events underneath.
                   </>
                 }
               />

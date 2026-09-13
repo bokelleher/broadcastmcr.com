@@ -3,6 +3,7 @@ import { useState } from 'react'
 const LINKS = [
   { href: '#wall', label: 'The Wall' },
   { href: '#telemetry', label: 'Telemetry' },
+  { href: '#ad-pods', label: 'Ad Pods' },
   { href: '#guardrails', label: 'Guardrails' },
   { href: '#captions', label: 'Captions' },
   { href: '#stream-deck', label: 'Stream Deck' },
