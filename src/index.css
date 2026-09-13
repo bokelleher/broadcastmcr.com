@@ -13,7 +13,7 @@
   --radius: 12px;
   --radius-sm: 8px;
   --shadow: 0 24px 64px rgba(0, 0, 0, 0.45);
-  --nav-h: 80px;
+  --nav-h: 96px;
   --max: 1120px;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -98,7 +98,7 @@ button {
 }
 
 .nav__logo img {
-  height: 52px;
+  height: 68px;
   width: auto;
 }
 
